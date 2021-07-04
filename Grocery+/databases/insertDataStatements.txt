@@ -1,0 +1,136 @@
+use online_grocery_store_database;
+
+insert into user values(
+	"abc@gmail.com", "abc123456", "5896532147", "abc", "H-no : 15-108/k","Nagarkurnool","Telangana","509209");
+
+-- change path to absolute path to store images 
+ 
+insert into product values 
+			('OGT0100001','Baby Wipes-Gentle baby(72pcs)',184.00,
+             load_file('C:/xampp/htdocs/grocery+/databases/data/baby_care/name_himalaya_baby_wipes_gentle_baby_72pcs_brand_himalaya_baby_price_184_offer_0.png'),
+             'Himalaya',14,2),
+            ('OGT0100002','No more tears Baby Shampoo(500ml)',360.00,
+             load_file('C:/xampp/htdocs/grocery+/databases/data/baby_care/name_johnsons_baby_no_more_tears_baby_shampoo_500ml_brand_johnsons_baby_price_360_offer_22_reduced_price_280.png'),
+             'Johnsons baby',10,2), 
+			('OGT0100003','Baby Cereal(300g)',264.00,
+             load_file('C:/xampp/htdocs/grocery+/databases/data/baby_care/name_nestle_cerelac_baby_cereal_with_milk_multigrain_and_fruits_300g_brand_nestle_price_264_offer_0.png'),
+             'Nestle',14,6);
+             
+ insert into product values
+            ('OGT0200001','Amul Butter(100g)',48.00,
+             load_file('C:/xampp/htdocs/grocery+/databases/data/bakery_cakes_and_dairy/name_amul_butter_100g_brand_amul_price_48_offer_1_reduced_price_47.52.png'),
+             'Amul',14,6),
+			('OGT0200002','Britannia bake rusk toast(72g)',10.00,
+             load_file('C:/xampp/htdocs/grocery+/databases/data/bakery_cakes_and_dairy/name_britannia_bake_rusk_toast_72g_brand_britannia_price_10_offer_0.png'),
+             'Britannia',54,1),
+            ('OGT0300001','Chocolate Health Drink(500g)',209.00,
+             load_file('C:/xampp/htdocs/grocery+/databases/data/beverages/name_bournvita_chocolate_health_drink_500g_brand_bournvita_price_209_offer_10_reduced_price_187.10.png'),
+             'Bournvita',74,2);
+             
+insert into product values
+		('OGT0300002','100% Natural Cocunut Water(12x200ml)',720.00,
+             load_file('C:/xampp/htdocs/grocery+/databases/data/beverages/name_raw_pressary_100_natural_cocunut_water_12x200ml_multipack_brand_raw_pressery_price_720_offer_0.png'),
+             'Raw Pressary',154,10), 
+             ('OGT0300003','Real, Cranberry Juice(1L)',115.00,
+             load_file('C:/xampp/htdocs/grocery+/databases/data/beverages/name_real_juice_fruit_power_cranberry_1l_brand_real_price_115_offer_11_reduced_price_101.97.png'),
+             'Real',64,3),
+		('OGT0300004','Red Label Tea(250g)',140.00,
+             load_file('C:/xampp/htdocs/grocery+/databases/data/beverages/name_red_label_tea_250g_brand_red_label_price_140_offer_0.png'),
+             'Red Label',94,5),
+             ('OGT0400001','Aashirvaad atta - Whole wheat(10kg)',490.00,
+             load_file('C:/xampp/htdocs/grocery+/databases/data/foodgrains_oil_and_masala/name_aashirvaad_atta_whole_wheat_10kg_pouch_brand_aashirvaad_price_490_offer_21_reduced_price_387.png'),
+             'Aashirvaad',74,2),
+	('OGT0400002','100% Sunflower Refined Oil(1L)',183.00,
+           load_file('C:/xampp/htdocs/grocery+/databases/data/foodgrains_oil_and_masala/name_fortune_sun_lite_sunflower_refined_oil_1l_pouch_brand_fortune_price_183_offer_7.6_reduced_price_169.png'),
+             'Fortune',154,8), 
+             ('OGT0400003','Real, Brown Chana(220g)',80.00,
+             load_file('C:/xampp/htdocs/grocery+/databases/data/foodgrains_oil_and_masala/name_tadaa_brown_chana_naturally_steamed_220g_brand_tadaa_price_80_offer_0.png'),
+             'Tadaa',64,3), 
+             ('OGT0500001','Banganapalli Mango(1kg)',125.00,
+             load_file('C:/xampp/htdocs/grocery+/databases/data/fruits_and_vegetables/name_fresho_banganapalli_mango_1kg_brand_fresho_price_125_offer_20_reduced_price_100.png'),
+             'Fresho',74,2),
+			('OGT0500002','Onion(1kg)',28.75,
+             load_file('C:/xampp/htdocs/grocery+/databases/data/fruits_and_vegetables/name_fresho_onion_1kg_brand_fresho_price_28.75_offer_35_reduced_price_18.81.png'),
+             'Fresho',154,8), 
+             ('OGT0500003','Palak(100g)',11.25,
+             load_file('C:/xampp/htdocs/grocery+/databases/data//fruits_and_vegetables/name_fresho_palak_100g_brand_fresho_price_11.25_offer_20_reduced_price_9.png'),
+             'Fresho',64,3),
+             ('OGT0600001','Sweet Corn Kernels(150g)',50.00,
+             load_file('C:/xampp/htdocs/grocery+/databases/data/snacks_and_branded_foods/name_supa_corn_sweet_corn_kernels_150g_brand_supa_corn_price_50_offer_0.png'),
+             'Supa Corn',74,2) ;
+
+insert into product_category VALUES
+	('OGT0100001','Baby Care'),
+    ('OGT0100002','Baby Care'),
+    ('OGT0100003','Baby Care'),
+    ('OGT0200001','Bakery,Cakes and Dairy'),
+    ('OGT0200002','Bakery,Cakes and Dairy'),
+    ('OGT0300001','Beverages'),
+    ('OGT0300002','Beverages'),
+    ('OGT0300003','Beverages'),
+    ('OGT0300004','Beverages'),
+    ('OGT0400001','Foodgrains, Oil and Masala'),
+    ('OGT0400002','Foodgrains, Oil and Masala'),
+    ('OGT0400003','Foodgrains, Oil and Masala'),
+    ('OGT0500001','Fruits and Vegetables'),
+    ('OGT0500002','Fruits and Vegetables'),
+    ('OGT0500003','Fruits and Vegetables'),
+    ('OGT0400003','Fruits and Vegetables'),
+    ('OGT0600001','Fruits and Vegetables'),
+    ('OGT0600001','Snacks and Branded Food'),
+     ('OGT0200002','Snacks and Branded Food');
+    
+ insert into offer VALUES
+	('OFF01','Get 20% OFF',20),
+    ('OFF02','Get 10% OFF',10),
+    ('OFF03','Get 30% OFF',30),
+    ('OFF04','Get 40% OFF',40),
+    ('OFF05','Get 50% OFF',50);
+    
+insert into offer_product VALUES
+	('OFF01','OGT0100001'),
+    ('OFF01','OGT0500001'),
+    ('OFF01','OGT0400001'),
+    ('OFF01','OGT0300001'),
+    ('OFF01','OGT0200001'),
+    ('OFF01','OGT0500002'),
+    ('OFF02','OGT0100002'),
+    ('OFF02','OGT0100003'),
+    ('OFF03','OGT0200002'),
+    ('OFF03','OGT0300002'),
+    ('OFF03','OGT0300003'),
+    ('OFF04','OGT0300004'),
+    ('OFF05','OGT0400002'),
+    ('OFF05','OGT0600001');
+    
+ insert into user_cart VALUES	
+	('abc@gmail.com','OGT0100001',1),
+    ('abc@gmail.com','OGT0100002',2),
+    ('abc@gmail.com','OGT0200001',1),
+    ('abc@gmail.com','OGT0300001',2),
+    ('abc@gmail.com','OGT0400001',1);
+    
+insert into order_product VALUES
+	('ORDEROGTID0000000001','OGT0100001',1),
+    ('ORDEROGTID0000000001','OGT0100002',2),
+    ('ORDEROGTID0000000001','OGT0200001',1),
+    ('ORDEROGTID0000000001','OGT0300001',2),
+    ('ORDEROGTID0000000001','OGT0400001',1);
+    
+insert into user_order(email_id,order_id,order_status,price) VALUES
+	('abc@gmail.com','ORDEROGTID0000000001','CONFIRMED',0);
+
+insert into delivery_man values
+("xyz@gmail.com", "xyz123456", "9876543210", "delivery_man1","SK Appartments","Kolkata","West Bengal","700014"),
+("abc@gmail.com", "abc123456", "9877665544", "delivery_man2","Kk Appartments","Kolkata","West Bengal","700012");
+
+insert into order_delivery_man VALUES
+	('xyz@gmail.com','ORDEROGTID0000000001',500);
+
+select * from product; 
+select * from product_category; 
+select * from offer; 
+select * from offer_product; 
+select * from user_cart; 
+select * from order_product;
+select * from user_order;            

@@ -1,0 +1,60 @@
+:root {
+  --theme_background_color: white;
+  --theme_color: #2d3436;
+}
+
+.titleHeight{
+  height: 100px;
+}
+
+.product_name{
+  color: #2c3e50;
+}
+
+.img-thumbnail{
+  border: 1px var(--theme_color);
+  height: 500px;
+  width: 500px;
+  background-color: var(--theme_color);
+}
+
+.rowHeight {
+  height: 500px;
+}
+
+.miniRowHeight {
+  height: 100px;
+}
+
+.product_details {
+  font-size: 2vw;
+  color: black;
+}
+
+.product_sol{
+  font-size: 2vw;
+  color: #003333;
+}
+
+.btn_quantity {
+  background-color: white;
+  color: black;
+}
+
+.tableHeight {
+  height: 200px;
+}
+
+.table_background {
+  background-color: white;
+  font-size: 1.5vw;
+}
+
+.offer_table_background {
+  background-color: #66ff66;
+  font-size: 1.5vw;
+}
+.category_background{
+  background-color: #66ff66;
+  font-size: 1.5vw;
+}

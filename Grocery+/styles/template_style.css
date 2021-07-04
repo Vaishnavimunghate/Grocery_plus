@@ -1,0 +1,23 @@
+:root {
+  --theme_background_color: white;
+  --theme_color: #2d3436;
+}
+
+body{
+  background: url(../images/background_transparent.png) no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Noto Sans JP', sans-serif;
+  color: var(--theme_color)
+}
+
+.logo {
+  font-family: 'Ubuntu', sans-serif;
+  color: #0a3d62;
+}
+
+.footer{
+  background-color: var(--theme_background_color);
+  position:fixed;
+  bottom: 0;
+  color: var(--theme_color);
+}

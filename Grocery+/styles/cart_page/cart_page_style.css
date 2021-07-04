@@ -1,0 +1,21 @@
+.tableHeight {
+  height: 200px;
+}
+
+.table_background {
+  background-color: white;
+  font-size: 1.5vw;
+}
+
+.titleHeight{
+  height:100px;
+}
+
+.product_details {
+  font-size: 2vw;
+  color: black;
+}
+
+.miniRowHeight {
+  height: 100px;
+}
